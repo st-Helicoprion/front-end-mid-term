@@ -10,8 +10,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgb(0,0,0);
-    background-image: url(https://i.gifer.com/1LFE.gif);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+                      url(https://i.gifer.com/UEsS.gif);
     background-repeat: repeat-y;
     background-size: cover;
     background-attachment: fixed;
