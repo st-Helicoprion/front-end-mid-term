@@ -10,52 +10,81 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Jolly+Lodger&family=Noto+Sans:wght@400;700;900&family=Space+Mono&display=swap" rel="stylesheet">
+    <script src = "js/jquery.js"></script>
+    <script src = "js/script.js"></script>
     <title>The Dark Playgrounds</title>
 </head>
 <body>
     <header>
-        <a href="index.html" class = logo-text >The Dark Playgrounds</a>
+        <div class="header-click-range">
+            <a href="index.html" class = logo-text >The Dark</br>Playgrounds</a>
         <nav>
-            <a href="project.html">Project</a>
+            <a href="project.html">Gameplay</a>
+            <a href="story.html">Story</a>
             <a href="aboutUs.html">About Us</a>
         </nav>
+        <div class="nav__menu" id="mobile">&#9776</div>
+        <div class="nav_list" id = mobile>
+            <div class=dot-left_menu></div>
+            <div class = small-h-separator></div>
+            <a href="project.html">Gameplay</a>
+            <a href="story.html">Story</a>
+            <a href="aboutUs.html">About Us</a>
+        </div>
+        </div>
     </header>
     <content>
-        <div class = mechanic-desc>
-            <div class= mechanic-desc-text>
-                <h3>The Main Hook : The Sound Wave Mechanic</h3>
-                <div class = dot-left></div> 
-                <div class = medium-h-separator></div>
-                <p>Use sound waves, created through your toys, to explore the pitch dark world around you.
-                   Different toys bring in new exciting ways to see in the dark, use them to the best of your abilities !
-                </p>
-            </div>
-            <video widht="320" height = "240" autoplay muted loop>
-                <source src = "./vid/GamePlayVidDark.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class = story-desc>
-            <img src=./img/img_boy.png width = 215px height=275px class = story-desc-img>
-            <div class = story-desc-text>
-                <h3>The Story and World</h3>
-                <div class = dot-left></div>
-                <div class = medium-h-separator></div>
-                <p>In a pitch dark world, play as a boy with toys that illuminate through sound waves. Find all the toys and use them to free your captured best friend. The more toys you collect, the stronger your bond and the further she is from despair!</p>
-            </div>
-            
-        </div>
         <div class = summary-desc>
-            <div class = summary-desc-text>
-                <h3>Embark Now !</h3>
-                <div class=dot-middle></div>
-                <div class = medium-h-separator></div>
-                <p>Your best friend has been captured ! Find powerful toys in complete darkness and reach her before she loses hope !
-                   <br>Oh we forgot to mention, you won't be alone in the dark, we've made sure to provide some devious company to keep you on your toes ! Bon Voyage~</p>
-                <img src = ./img/img_save_girl.png width = 520px height = 350px class=summary-desc-img>
+            <div class= summary-desc-text>
+                <h2>Pitch Black, Then What ?</h2>
+                    <div class=dot-middle></div>
+                    <div class = medium-h-separator></div>
+                    <p>In THE DARK PLAYGROUNDS, everything around you is pitch black, how do we play the game then when we can't see anything?
+                    Introducing, sound waves...
+                    </p>
+                    <div class = sonar-preview-content>
+                        <div class="sonar-preview-text">
+                            <h3>The Sound Wave Mechanic</h3>
+                        <div class=dot-left></div>
+                        <div class = small-h-separator></div>  
+                        <p>The sound waves help you visualize the environment,</br>pointing out a path for you.</p>
+                        </div>
+                        <div class = placeholder></div>
+                    </div> 
+                
+                    <div class="monster-info-container" id="monster-info-container">
+                        <div class="summary-desc">
+                            <div class="summary-desc-text">
+                                <h2>Out For Your Head!</h2>
+                                <div class=dot-middle></div>
+                                <div class = medium-h-separator></div>
+                                <p>Monsters are listening in every corner of the darkness, careful where you use your sound waves !</p>
+                                <div class =monster-info-content>
+                                    <div class="monster-info-text">
+                                        <div class = name-and-next>
+                                            <h3 id="monster-type">Stone</h3>
+                                            <button class = monster-info-next><img src="./img/UI/arrow-white.png" height="30px" width="60px"></button>
+                                        </div>
+                                        <div class=dot-left></div>
+                                        <div class = small-h-separator></div>  
+                                        <p id="monster-behavior">Usually dormant, will give chase when touched by sound waves,
+                                       often found in groups.</p>
+                                    </div>
+                                    <div class = placeholder-mons></div>
+                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
             </div>
+            <!-- <video widht="320" height = "240" autoplay muted loop>
+                <source src = "./vid/GamePlayVidDark.mp4" type="video/mp4">
+            </video> -->
         </div>
+      
     </content>
-    <footer>
+    <footer class="gameplay-footer">
         <div class = h-separator></div>
         <p class = footer-text>&copy 2023 Design by Mosquito Lamp Games</p>
     </footer>

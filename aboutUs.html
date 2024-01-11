@@ -10,15 +10,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Jolly+Lodger&family=Noto+Sans:wght@400;700;900&family=Space+Mono&display=swap" rel="stylesheet">
+    <script src = "js/jquery.js"></script>
+    <script src = "js/script.js"></script>
     <title>The Dark Playgrounds</title>
 </head>
 <body>
     <header>
-        <a href="index.html" class = logo-text >The Dark Playgrounds</a>
+        <div class="header-click-range">
+            <a href="index.html" class = logo-text >The Dark</br>Playgrounds</a>
         <nav>
-            <a href="project.html">Project</a>
+            <a href="project.html">Gameplay</a>
+            <a href="story.html">Story</a>
             <a href="aboutUs.html">About Us</a>
         </nav>
+        <div class="nav__menu" id="mobile">&#9776</div>
+        <div class="nav_list" id = mobile>
+            <div class=dot-left_menu></div>
+            <div class = small-h-separator></div>
+            <a href="project.html">Gameplay</a>
+            <a href ="story.html">Story</a>
+            <a href="aboutUs.html">About Us</a>
+        </div>
+        </div>
+        
+       
     </header>
     <content class= about-members-desc>
         <ul type = none>
@@ -29,18 +44,19 @@
                             <h3 class=member-name>Christian</h3>
                             <div class=dot-left></div>
                             <div class = small-h-separator></div>  
-                            <p>Programmer</p>
+                            <h3>Programmer</h3>
                 </div>
                     </div>
                     <li>
                         <div class = member-info-right>
+                            <div class = member-pic id = mobile><img src = ./img/img_member_snake.png width = 315px height = 255px></div>
                             <div class= member-text>
                                 <h3 class=member-name>Peter</h3>
                                 <div class=dot-right></div>
                                 <div class = small-h-separator></div>
-                                <p>3D Designer</p>
+                                <h3>3D Designer</h3>
                             </div>
-                            <div class = member-pic><img src = ./img/img_member_snake.png width = 315px height = 255px></div>
+                            <div class = member-pic id = desktop><img src = ./img/img_member_snake.png width = 315px height = 255px></div>
                         </div>
                     </li>
                 </li>
@@ -51,19 +67,20 @@
                             <h3 class=member-name>May</h3>
                             <div class=dot-left></div>
                             <div class = small-h-separator></div>
-                            <p>3D Designer</p>
+                            <h3>3D Designer</h3>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class = member-info-right>
+                        <div class = member-pic id = mobile><img src = ./img/img_member_fish.png width = 315px height = 255px></div>
                         <div class= member-text>
                             <h3 class=member-name>Tommy</h3>
                             <div class=dot-right></div>
                             <div class = small-h-separator></div>
-                            <p>Level Designer</p>
+                            <h3>Level Designer</h3>
                         </div>
-                        <div class = member-pic><img src = ./img/img_member_fish.png width = 315px height = 255px></div>
+                        <div class = member-pic id = desktop><img src = ./img/img_member_fish.png width = 315px height = 255px></div>
                     </div>
                 </li>
         </ul>

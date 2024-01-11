@@ -10,20 +10,99 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Jolly+Lodger&family=Noto+Sans:wght@400;700;900&family=Space+Mono&display=swap" rel="stylesheet">
+    <script src = "js/jquery.js"></script>
+    <script src = "js/script.js"></script>
     <title>The Dark Playgrounds</title>
 </head>
 <body>
     <header>
-        <a href="index.html" class = logo-text >The Dark Playgrounds</a>
+        <div class="header-click-range">
+            <a href="index.html" class = logo-text >The Dark</br>Playgrounds</a>
         <nav>
-            <a href="project.html">Project</a>
+            <a href="project.html">Gameplay</a>
+            <a href="story.html">Story</a>
             <a href="aboutUs.html">About Us</a>
         </nav>
+        <div class="nav__menu" id="mobile">&#9776</div>
+        <div class="nav_list" id = mobile>
+            <div class=dot-left_menu></div>
+            <div class = small-h-separator></div>
+            <a href="project.html">Gameplay</a>
+            <a href ="story.html">Story</a>
+            <a href="aboutUs.html">About Us</a>
+        </div>
+        </div>
+        
+       
     </header>
     <content>
         <h1>THE DARK PLAYGROUNDS</h1>
         <h2>The abyss stares back...in VR</h2>
-        <a href="#" class = play-button><img src ="./img/img_steam_logo_white.png" width = 30px height=30px>Play now</a>
+        <div class="guide-arrow-container">
+            <a href="#sonar-preview" id="arrow-img"></a>
+        </div>
+        <div class="sonar-preview" id="sonar-preview">
+            <div class = summary-desc>
+                <div class = summary-desc-text>
+                    <h2>A New Way To See</h2>
+                    <div class=dot-middle></div>
+                    <div class = medium-h-separator></div>
+                    <div class = sonar-preview-content>
+                        <div class="sonar-preview-text">
+                            <h3>The Sound Wave Mechanic</h3>
+                        <div class=dot-left></div>
+                        <div class = small-h-separator></div>  
+                        <p>The sound waves help you visualize the environment,</br>pointing out a path for you.</p>
+                        </div>
+                        <div class = placeholder></div>
+                    </div> 
+                   
+                </div>
+            </div>
+        </div>
+        <div class="toy-preview"></div>
+        <div class="monster-preview">
+            <div class = summary-desc>
+                <div class = summary-desc-text>
+                    <h2>Hidden Threats</h2>
+                    <div class=dot-middle></div>
+                    <div class = medium-h-separator></div>
+                    <p>Meet the beasts who will stop at nothing to stop you !</p>
+                    <ul class = "monster-outer-container">
+                        <a href="project.html#monster-info-container" class="monster-container">
+                            <div class="monster-name" id="wanderID"><p>Wanderer</p></div>
+                        </a>
+                        <a href="project.html#monster-info-container" class="monster-container">
+                            <div class="monster-name" id="stoneID"><p>Stone</p></div>
+                        </a>
+                        <a href="project.html#monster-info-container" class="monster-container">
+                            <div class="monster-name" id="creepID"><p>Creeper</p></div>
+                        </a>
+    
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="roguelike-preview"></div>
+        <div class="story-preview">
+            <div class = summary-desc>
+                <div class = summary-desc-text>
+                    <h2>Learn The Story</h2>
+                    <div class=dot-middle></div>
+                    <div class = medium-h-separator></div>
+                    <p>Find out more about the warped world cloaked in darkness</p>
+                    <div class="story-btn">
+                        <div class="story-prv-btn-range">
+                            <a href="story.html" class = play-button>Learn more</a>
+                        </div>
+                        <img id = rescue-img src = ./img/img_save_girl.png width = 520px height = 350px class=summary-desc-img>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
     </content>
     <footer>
         <div class = h-separator></div>
